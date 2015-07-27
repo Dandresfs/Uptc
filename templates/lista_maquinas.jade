@@ -22,10 +22,10 @@ block body_content
                     p(style="text-align:justify;") {{object.descripcion}}
                     a(href="calendario/{{object.id}}")
                         img(class="iconPdf",src="/static/imagenes/calendario.png")
-                    a(href="/tipo/{{object.id}}/agregar/")
+                    a(href="{{object.id}}/agregar/")
                         img(class="iconPdf",src="/static/imagenes/plus.png")
-                    a(href="/tipo/{{object.id}}/actividades/")
+                    a(href="{{object.id}}/actividades/")
                         img(class="iconPdf",src="/static/imagenes/menos.png")
-                    a(href="/tipo/{{object.id}}/actividad/")
+                    a(href="{{object.id}}/actividad/")
                         img(class="iconPdf",src="/static/imagenes/editar.png")
             | {% endfor %}

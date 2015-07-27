@@ -12,11 +12,12 @@ class ActividadView(ListView):
     template_name = "lista_actividades.html"
 
     def get_queryset(self):
-        queryset = Actividades.objects.all().filter(maquina__id=self.kwargs['idmachine'])
+        queryset = Actividades.objects.all().filter(maquina__id=self.kwargs['idmachine']).filter(tipo__id=self.kwargs['tipo'])
         return queryset
 
     def get_context_data(self, **kwargs):
         kwargs['nombremaquina'] = InventarioEquipos.objects.get(id=self.kwargs['idmachine']).nombre
+        kwargs['tipomantenimiento'] = TipoMantenimiento.objects.get(id=self.kwargs['tipo']).nombre
         return super(ActividadView,self).get_context_data(**kwargs)
 
 class ActividadEditarView(ListView):
@@ -24,11 +25,12 @@ class ActividadEditarView(ListView):
     template_name = "lista_actividades_editar.html"
 
     def get_queryset(self):
-        queryset = Actividades.objects.all().filter(maquina__id=self.kwargs['idmachine'])
+        queryset = Actividades.objects.all().filter(maquina__id=self.kwargs['idmachine']).filter(tipo__id=self.kwargs['tipo'])
         return queryset
 
     def get_context_data(self, **kwargs):
         kwargs['nombremaquina'] = InventarioEquipos.objects.get(id=self.kwargs['idmachine']).nombre
+        kwargs['tipomantenimiento'] = TipoMantenimiento.objects.get(id=self.kwargs['tipo']).nombre
         return super(ActividadEditarView,self).get_context_data(**kwargs)
 
 class InventarioView(ListView):
@@ -39,33 +41,38 @@ class InventarioView(ListView):
         kwargs['nombremantenimiento'] = TipoMantenimiento.objects.get(id=self.kwargs['idmantenimiento']).nombre
         return super(InventarioView,self).get_context_data(**kwargs)
 
+
 class NuevaActividadForm(FormView):
     template_name = 'nueva_actividad.html'
     form_class = NuevaActividad
-    success_url = '../'
+    success_url = '../../'
 
     def form_valid(self, form):
         form.instance.maquina = InventarioEquipos.objects.get(pk = self.kwargs['idmachine'])
+        form.instance.tipo = TipoMantenimiento.objects.get(pk = self.kwargs['tipo'])
         form.save()
         return super(NuevaActividadForm, self).form_valid(form)
 
 class ActividadDeleteView(DeleteView):
+
     template_name = 'eliminar_actividad.html'
     model = Actividades
-    success_url = '../../'
+    success_url = '../../../'
 
 class ActividadUpdateView(UpdateView):
     template_name = 'nueva_actividad.html'
     model = Actividades
     form_class = NuevaActividad
-    success_url = '../../'
+    success_url = '../../../'
+
+
 
 class CalendarioView(ListView):
     model = Actividades
     template_name = 'calendario.html'
 
     def get_queryset(self):
-        queryset = Actividades.objects.all().filter(maquina__id=self.kwargs['idmachine'])
+        queryset = Actividades.objects.all().filter(maquina__id=self.kwargs['idmachine']).filter(tipo__id=self.kwargs['idmantenimiento'])
         return queryset
 
     def get_context_data(self, **kwargs):

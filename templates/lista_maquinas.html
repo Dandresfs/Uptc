@@ -47,7 +47,7 @@
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <h3>{{object.nombre}}</h3>
-            <p style="text-align:justify;">{{object.descripcion}}</p><a href="calendario/{{object.id}}"><img src="/static/imagenes/calendario.png" class="iconPdf"></a><a href="/tipo/{{object.id}}/agregar/"><img src="/static/imagenes/plus.png" class="iconPdf"></a><a href="/tipo/{{object.id}}/actividades/"><img src="/static/imagenes/menos.png" class="iconPdf"></a><a href="/tipo/{{object.id}}/actividad/"><img src="/static/imagenes/editar.png" class="iconPdf"></a>
+            <p style="text-align:justify;">{{object.descripcion}}</p><a href="calendario/{{object.id}}"><img src="/static/imagenes/calendario.png" class="iconPdf"></a><a href="{{object.id}}/agregar/"><img src="/static/imagenes/plus.png" class="iconPdf"></a><a href="{{object.id}}/actividades/"><img src="/static/imagenes/menos.png" class="iconPdf"></a><a href="{{object.id}}/actividad/"><img src="/static/imagenes/editar.png" class="iconPdf"></a>
           </div>
         </div>{% endfor %}
       </div>

@@ -4,4 +4,4 @@ from .models import Actividades
 class NuevaActividad(ModelForm):
     class Meta:
         model = Actividades
-        exclude = ['maquina']
+        exclude = ['maquina','tipo']

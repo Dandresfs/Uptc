@@ -47,7 +47,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'inventario_equipos',
     'preventivo',
-    'rest_framework'
+    'rest_framework',
+    'django_cleanup',
 )
 
 MIDDLEWARE_CLASSES = (

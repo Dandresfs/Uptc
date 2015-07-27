@@ -1,8 +1,15 @@
 from django.db import models
 from inventario_equipos.models import InventarioEquipos
 
+class TipoMantenimiento(models.Model):
+    nombre = models.CharField('Tipo mantenimiento',max_length=100)
+
+    def __str__(self):
+        return self.nombre
+
 class Actividades(models.Model):
     maquina = models.ForeignKey(InventarioEquipos)
+    tipo = models.ForeignKey(TipoMantenimiento)
     nombre = models.CharField('Codigo actividad',max_length=100)
     descripcion = models.TextField('Descripcion',max_length=200)
     imagen = models.ImageField('Imagen', upload_to='Actividades/Imagenes/')
@@ -10,8 +17,7 @@ class Actividades(models.Model):
     def __str__(self):
         return self.nombre
 
-class TipoMantenimiento(models.Model):
-    nombre = models.CharField('Tipo mantenimiento',max_length=100)
+
 
 class EventCalendar(models.Model):
     title = models.CharField('Titulo',max_length=100)

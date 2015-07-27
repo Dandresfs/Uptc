@@ -14,12 +14,13 @@ urlpatterns = [
 
     url(r'^api/event/(?P<pk>[0-9]+)/(?P<mantenimiento>[0-9]+)/(?P<maquina>[0-9]+)/$', login_required(EventDetail.as_view())),
 
-    url(r'^(?P<idmachine>\w+)/actividades/$',login_required(ActividadView.as_view())),
-    url(r'^(?P<idmachine>\w+)/actividad/$',login_required(ActividadEditarView.as_view())),
+    url(r'^(?P<tipo>\w+)/(?P<idmachine>\w+)/actividades/$',login_required(ActividadView.as_view())),
+    url(r'^(?P<tipo>\w+)/(?P<idmachine>\w+)/actividad/$',login_required(ActividadEditarView.as_view())),
 
-    url(r'^(?P<idmachine>\w+)/agregar/$',login_required(NuevaActividadForm.as_view())),
-    url(r'^(?P<idmachine>\w+)/eliminar/(?P<pk>\w+)/$',login_required(ActividadDeleteView.as_view())),
-    url(r'^(?P<idmachine>\w+)/editar/(?P<pk>\w+)/$',login_required(ActividadUpdateView.as_view())),
+    url(r'^(?P<tipo>\w+)/(?P<idmachine>\w+)/agregar/$',login_required(NuevaActividadForm.as_view())),
+    url(r'^(?P<tipo>\w+)/(?P<idmachine>\w+)/eliminar/(?P<pk>\w+)/$',login_required(ActividadDeleteView.as_view())),
+    url(r'^(?P<tipo>\w+)/(?P<idmachine>\w+)/editar/(?P<pk>\w+)/$',login_required(ActividadUpdateView.as_view())),
+
 
     url(r'^(?P<idmantenimiento>\w+)/calendario/(?P<idmachine>\w+)/$',login_required(CalendarioView.as_view()),name="calendario"),
 ]
