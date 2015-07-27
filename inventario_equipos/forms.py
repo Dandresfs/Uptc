@@ -10,3 +10,8 @@ class NuevoInventarioEquipos(ModelForm):
             'color':TextInput(attrs={'type':'color','value':"#ff0000"})
         }
         fields = ['nombre','descripcion','color','imagen','pdf']
+
+class NuevoPlan(ModelForm):
+    class Meta:
+        model = InventarioEquipos
+        fields = ['preventivo','correctivo','predictivo','rcm','tpm']

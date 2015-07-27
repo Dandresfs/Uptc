@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
     <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <title>Inventario</title>
+    <title>Plan de Mantenimiento</title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
@@ -23,13 +23,14 @@
           <ul class="nav navbar-nav navbar-left">
             <div class="bread">
               <ol class="breadcrumb">
-                <li><a href="/inicio/">Inicio</a></li>
-                <li><a href="/mantenimiento/">Mantenimiento</a></li>
-                <li class="active">{{nombremantenimiento}}</li>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="../../">{{tipomantenimiento}}</a></li>
+                <li class="active">Plan {{maquina}}</li>
               </ol>
             </div>
           </ul>
           <ul class="nav navbar-nav navbar-right">
+            <li><a href="actualizar/">Actualizar el plan de Mantenimiento</a></li>
             <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle capitalize">{{user.username}}<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="/cerrar">Cerrar sesión</a></li>
@@ -39,18 +40,12 @@
         </div>
       </div>
     </nav>{% endif %}
-    <div class="container-fluid">
-      <div>{% for object in object_list %}
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 resetCol">
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="block"><a href="{{object.id}}/plan"><img src="/media/{{object.imagen}}"></a></div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <h3>{{object.nombre}}</h3>
-            <p style="text-align:justify;">{{object.descripcion}}</p><a href="calendario/{{object.id}}"><img src="/static/imagenes/calendario.png" class="iconPdf"></a><a href="{{object.id}}/agregar/"><img src="/static/imagenes/plus.png" class="iconPdf"></a><a href="{{object.id}}/actividades/"><img src="/static/imagenes/menos.png" class="iconPdf"></a><a href="{{object.id}}/actividad/"><img src="/static/imagenes/editar.png" class="iconPdf"></a>
-          </div>
-        </div>{% endfor %}
-      </div>
+    <form action="" method="POST">
+      {% csrf_token %}
+      {{form.as_p}}
+    </form>
+    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-sm-offset-2 col-lg-10 col-lg-offset-1">
+      <object type="application/pdf" data="/media/{{pdf}}" style="width: 100%; height: 550px;"></object>
     </div>
   </body>
 </html>

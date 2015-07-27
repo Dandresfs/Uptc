@@ -1,0 +1,21 @@
+extends base
+block titulo
+    | Plan de Mantenimiento
+
+block itemsNavbarBreadcrumb
+    li
+        a(href="/") Inicio
+    li
+        a(href="../../") {{tipomantenimiento}}
+
+    li(class="active") Plan {{maquina}}
+
+block itemsNavbarRight
+    li
+        a(href="actualizar/") Actualizar el plan de Mantenimiento
+
+block body_content
+    form(action="",method="POST")|{% csrf_token %}
+        | {{form.as_p}}
+    div(class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-sm-offset-2 col-lg-10 col-lg-offset-1")
+       object(type="application/pdf",data="/media/{{pdf}}",style="width: 100%; height: 550px;")

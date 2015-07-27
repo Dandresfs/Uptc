@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from .views import InventarioView,NuevaActividadForm,CalendarioView,EventListFull
+from .views import InventarioView,NuevaActividadForm,CalendarioView,EventListFull,PlanView, PlanUpdateView
 from .views import EventList,EventDetail,EventListMachine,ActividadList,ActividadDeleteView,ActividadView,ActividadUpdateView,ActividadEditarView
 from rest_framework.urlpatterns import format_suffix_patterns
 from django.contrib.auth.decorators import login_required
@@ -13,6 +13,11 @@ urlpatterns = [
     url(r'^api/event/actividad/(?P<nombre>.*)/$', login_required(ActividadList.as_view())),
 
     url(r'^api/event/(?P<pk>[0-9]+)/(?P<mantenimiento>[0-9]+)/(?P<maquina>[0-9]+)/$', login_required(EventDetail.as_view())),
+
+
+    url(r'^(?P<tipo>\w+)/(?P<idmachine>\w+)/plan/$',login_required(PlanView.as_view())),
+    url(r'^(?P<tipo>\w+)/(?P<idmachine>\w+)/plan/actualizar/$',login_required(PlanUpdateView.as_view())),
+
 
     url(r'^(?P<tipo>\w+)/(?P<idmachine>\w+)/actividades/$',login_required(ActividadView.as_view())),
     url(r'^(?P<tipo>\w+)/(?P<idmachine>\w+)/actividad/$',login_required(ActividadEditarView.as_view())),

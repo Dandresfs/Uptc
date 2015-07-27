@@ -1,11 +1,44 @@
 from django.views.generic.list import ListView
 from django.views.generic.edit import FormView
 from .forms import NuevaActividad
+from inventario_equipos.forms import NuevoPlan
 from .models import Actividades
 from inventario_equipos.models import InventarioEquipos
 from .serializers import EventSerializer, EventFullSerializer, ActividadSerializer
 from .models import EventCalendar,TipoMantenimiento
 from django.views.generic.edit import DeleteView, UpdateView
+
+
+class PlanView(ListView):
+    model = InventarioEquipos
+    template_name = "plan.html"
+
+    def get_context_data(self, **kwargs):
+        if self.kwargs['tipo'] == '1':
+            kwargs['pdf'] = InventarioEquipos.objects.get(id=self.kwargs['idmachine']).preventivo
+        if self.kwargs['tipo'] == '2':
+            kwargs['pdf'] = InventarioEquipos.objects.get(id=self.kwargs['idmachine']).correctivo
+        if self.kwargs['tipo'] == '3':
+            kwargs['pdf'] = InventarioEquipos.objects.get(id=self.kwargs['idmachine']).preventivo
+        if self.kwargs['tipo'] == '4':
+            kwargs['pdf'] = InventarioEquipos.objects.get(id=self.kwargs['idmachine']).rcm
+        if self.kwargs['tipo'] == '5':
+            kwargs['pdf'] = InventarioEquipos.objects.get(id=self.kwargs['idmachine']).tpm
+        kwargs['tipomantenimiento'] = TipoMantenimiento.objects.get(id=self.kwargs['tipo']).nombre
+        kwargs['maquina'] = InventarioEquipos.objects.get(id=self.kwargs['idmachine']).nombre
+        return super(PlanView,self).get_context_data(**kwargs)
+
+class PlanUpdateView(UpdateView):
+    template_name = "plan_actualizar.html"
+    model = InventarioEquipos
+    form_class = NuevoPlan
+    pk_url_kwarg = 'idmachine'
+    success_url = "../"
+
+    def get_context_data(self, **kwargs):
+        kwargs['tipomantenimiento'] = TipoMantenimiento.objects.get(id=self.kwargs['tipo']).nombre.lower()
+        kwargs['maquina'] = InventarioEquipos.objects.get(id=self.kwargs['idmachine']).nombre
+        return super(PlanUpdateView,self).get_context_data(**kwargs)
 
 class ActividadView(ListView):
     model = Actividades
@@ -41,7 +74,6 @@ class InventarioView(ListView):
         kwargs['nombremantenimiento'] = TipoMantenimiento.objects.get(id=self.kwargs['idmantenimiento']).nombre
         return super(InventarioView,self).get_context_data(**kwargs)
 
-
 class NuevaActividadForm(FormView):
     template_name = 'nueva_actividad.html'
     form_class = NuevaActividad
@@ -64,8 +96,6 @@ class ActividadUpdateView(UpdateView):
     model = Actividades
     form_class = NuevaActividad
     success_url = '../../../'
-
-
 
 class CalendarioView(ListView):
     model = Actividades
