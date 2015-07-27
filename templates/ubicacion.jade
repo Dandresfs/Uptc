@@ -1,0 +1,16 @@
+extends base
+block titulo
+    | Ubicación en Planta
+
+block extra_style
+   script(type="text/javascript",src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpTXGBPFtrzBaF7IwWQvUOx09Cj2imc0E")
+   script(type="text/javascript",src="{% static 'js/map.js' %}")
+
+block itemsNavbarBreadcrumb
+    li
+        a(href="/inicio/") Inicio
+    li(class="active") Ubicación
+
+block body_content
+   div(class="col-xs-12 col-sm-12 col-md-12 col-lg-12")
+      div(id="map-canvas")

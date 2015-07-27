@@ -1,0 +1,31 @@
+extends base
+block titulo
+    | Inventario
+
+block itemsNavbarBreadcrumb
+    li
+        a(href="/inicio/") Inicio
+    li
+        a(href="/mantenimiento/") Mantenimiento
+    li(class="active") {{nombremantenimiento}}
+
+block body_content
+    div(class="container-fluid")
+        div()
+            | {% for object in object_list %}
+            div(class="col-xs-12 col-sm-12 col-md-12 col-lg-6 resetCol")
+                div(class="col-xs-12 col-sm-6 col-md-6 col-lg-6")
+                    div(class="block")
+                        img(src="/media/{{object.imagen}}")
+                div(class="col-xs-12 col-sm-6 col-md-6 col-lg-6")
+                    h3 {{object.nombre}}
+                    p(style="text-align:justify;") {{object.descripcion}}
+                    a(href="calendario/{{object.id}}")
+                        img(class="iconPdf",src="/static/imagenes/calendario.png")
+                    a(href="/tipo/{{object.id}}/agregar/")
+                        img(class="iconPdf",src="/static/imagenes/plus.png")
+                    a(href="/tipo/{{object.id}}/actividades/")
+                        img(class="iconPdf",src="/static/imagenes/menos.png")
+                    a(href="/tipo/{{object.id}}/actividad/")
+                        img(class="iconPdf",src="/static/imagenes/editar.png")
+            | {% endfor %}

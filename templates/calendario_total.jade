@@ -1,0 +1,25 @@
+extends base
+block titulo
+    | Calendario general
+block extra_style
+    link(rel="stylesheet",href="{% static 'css/fullcalendar.min.css' %}")
+    link(href="{% static 'css/fullcalendar.print.css' %}")
+    script(src="{% static 'js/moment.min.js' %}")
+    script(src="{% static 'js/fullcalendar.min.js' %}")
+    script(src="{% static 'js/lang-all.js' %}")
+    script(src="{% static 'js/jquery-ui.custom.min.js' %}")
+block itemsNavbarBreadcrumb
+    li
+        a(href="/inicio/") Inicio
+    li
+        a(href="/mantenimiento/") Mantenimiento
+    li(class="active") Calendario Total
+block body_content
+    div(class="container-fluid")
+        div(class="col-xs-12 col-sm-12 col-md-12 col-lg-9 resetCol")
+            div(id='calendar')
+        div(class="col-xs-12 col-sm-12 col-md-12 col-lg-3 resetCol")
+            h3(id="titulo") Actividad
+            p(id="descripcion") Haga click en una actividad para mostrar la descripcion
+            img(id="imagen",style="width:100%;",src="")
+    script(src="{% static 'js/calendario_general.js' %}")

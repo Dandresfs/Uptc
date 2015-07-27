@@ -1,0 +1,34 @@
+extends base
+block titulo
+    | Inventario
+
+
+block itemsNavbarRight
+    li
+        a(href="/inventario/nuevo") Nueva Maquina
+
+block itemsNavbarBreadcrumb
+    li
+        a(href="/inicio/") Inicio
+    li(class="active") Inventario
+
+
+block body_content
+    div(class="container-fluid")
+        div()
+            |{% for object in object_list %}
+            div(class="col-xs-12 col-sm-12 col-md-12 col-lg-6 resetCol")
+                div(class="col-xs-12 col-sm-6 col-md-6 col-lg-6")
+                    div(class="block")
+                        a(href="/inventario/{{object.id}}/editar")
+                            img(src="/media/{{object.imagen}}")
+                div(class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center")
+                    h3 {{object.nombre}}
+                    p {{object.descripcion}}
+                    a(href="{{object.id}}/calendario")
+                        img(class="iconPdf",src="/static/imagenes/calendario.png")
+                    a(class="paddingLat",href="/media/{{object.pdf}}")
+                        img(class="iconPdf",src="/static/imagenes/pdf.png")
+                    a(class="paddingLat",href="/inventario/{{object.id}}/eliminar")
+                        img(class="iconPdf",src="/static/imagenes/menos.png")
+            |{% endfor %}

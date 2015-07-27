@@ -1,0 +1,70 @@
+{% load staticfiles %}<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <title>Mantenimiento</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  </head>
+  <body>{% if user.is_authenticated %}
+    <nav class="navbar navbar-custom">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#idNavbar" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toogle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div id="idNavbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <div class="bread">
+              <ol class="breadcrumb">
+                <li><a href="/inicio/">Inicio</a></li>
+                <li class="active">Mantenimiento</li>
+              </ol>
+            </div>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle capitalize">{{user.username}}<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/cerrar">Cerrar sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>{% endif %}
+    <div class="container-fluid">
+      <div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetCol"><a href="/tipo/1/">
+            <div style="background-color:#02BFC0" class="block"><i class="icono fa fa-calendar-o fa-5x"></i>
+              <p class="text-center">Preventivo</p>
+            </div></a></div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetCol"><a href="/tipo/2/">
+            <div style="background-color:#01A55B" class="block"><i class="icono fa fa-fire fa-5x"></i>
+              <p class="text-center">Correctivo</p>
+            </div></a></div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetCol"><a href="/tipo/3/">
+            <div style="background-color:#F25724" class="block"><i class="icono fa fa-magic fa-5x"></i>
+              <p class="text-center">Predictivo</p>
+            </div></a></div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetCol"><a href="/tipo/4/">
+            <div style="background-color:#F4A104" class="block"><i class="icono fa fa-bar-chart fa-5x"></i>
+              <p class="text-center">RCM</p>
+            </div></a></div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetCol"><a href="/tipo/5/">
+            <div style="background-color:#A62F01" class="block"><i class="icono fa fa-wrench fa-5x"></i>
+              <p class="text-center">TPM</p>
+            </div></a></div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetCol"><a href="/inventario/calendario/">
+            <div style="background-color:#573BE8" class="block"><i class="icono fa fa-book fa-5x"></i>
+              <p class="text-center">Calendario Total</p>
+            </div></a></div>
+      </div>
+    </div>
+  </body>
+</html>

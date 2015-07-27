@@ -1,0 +1,45 @@
+extends base
+block titulo
+    | Mantenimiento
+
+block itemsNavbarBreadcrumb
+    li
+        a(href="/inicio/") Inicio
+    li(class="active") Mantenimiento
+
+block body_content
+    div(class="container-fluid")
+        div()
+            div(class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetCol")
+                a(href="/tipo/1/")
+                    div(class="block",style='background-color:#02BFC0')
+                        i(class="icono fa fa-calendar-o fa-5x")
+                        p(class="text-center") Preventivo
+
+            div(class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetCol")
+                a(href="/tipo/2/")
+                    div(class="block",style='background-color:#01A55B')
+                        i(class="icono fa fa-fire fa-5x")
+                        p(class="text-center") Correctivo
+
+            div(class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetCol")
+                a(href="/tipo/3/")
+                    div(class="block",style='background-color:#F25724')
+                        i(class="icono fa fa-magic fa-5x")
+                        p(class="text-center") Predictivo
+
+            div(class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetCol")
+                a(href="/tipo/4/")
+                    div(class="block",style='background-color:#F4A104')
+                        i(class="icono fa fa-bar-chart fa-5x")
+                        p(class="text-center") RCM
+            div(class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetCol")
+                a(href="/tipo/5/")
+                    div(class="block",style='background-color:#A62F01')
+                        i(class="icono fa fa-wrench fa-5x")
+                        p(class="text-center") TPM
+            div(class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetCol")
+                a(href="/inventario/calendario/")
+                    div(class="block",style='background-color:#573BE8')
+                        i(class="icono fa fa-book fa-5x")
+                        p(class="text-center") Calendario Total

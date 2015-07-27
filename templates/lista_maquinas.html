@@ -1,0 +1,56 @@
+{% load staticfiles %}<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  </head>
+  <body>{% if user.is_authenticated %}
+    <nav class="navbar navbar-custom">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#idNavbar" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toogle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div id="idNavbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <div class="bread">
+              <ol class="breadcrumb">
+                <li><a href="/inicio/">Inicio</a></li>
+                <li><a href="/mantenimiento/">Mantenimiento</a></li>
+                <li class="active">{{nombremantenimiento}}</li>
+              </ol>
+            </div>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle capitalize">{{user.username}}<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/cerrar">Cerrar sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>{% endif %}
+    <div class="container-fluid">
+      <div>{% for object in object_list %}
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 resetCol">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="block"><img src="/media/{{object.imagen}}"></div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <h3>{{object.nombre}}</h3>
+            <p style="text-align:justify;">{{object.descripcion}}</p><a href="calendario/{{object.id}}"><img src="/static/imagenes/calendario.png" class="iconPdf"></a><a href="/tipo/{{object.id}}/agregar/"><img src="/static/imagenes/plus.png" class="iconPdf"></a><a href="/tipo/{{object.id}}/actividades/"><img src="/static/imagenes/menos.png" class="iconPdf"></a><a href="/tipo/{{object.id}}/actividad/"><img src="/static/imagenes/editar.png" class="iconPdf"></a>
+          </div>
+        </div>{% endfor %}
+      </div>
+    </div>
+  </body>
+</html>

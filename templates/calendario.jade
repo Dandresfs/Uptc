@@ -1,0 +1,36 @@
+extends base
+block titulo
+    | Calendario {{nombremaquina}}
+
+block extra_style
+    link(rel="stylesheet",href="{% static 'css/fullcalendar.min.css' %}")
+    link(href="{% static 'css/fullcalendar.print.css' %}")
+    script(src="{% static 'js/moment.min.js' %}")
+    script(src="{% static 'js/fullcalendar.min.js' %}")
+    script(src="{% static 'js/lang-all.js' %}")
+    script(src="{% static 'js/jquery-ui.custom.min.js' %}")
+
+
+block itemsNavbarBreadcrumb
+    li
+        a(href="/inicio/") Inicio
+    li
+        a(href="/mantenimiento/") {{nombremantenimiento}}
+    li(class="active") {{nombremaquina}}
+
+
+block body_content
+    div(class="container-fluid")
+        div(class="col-xs-12 col-sm-12 col-md-12 col-lg-3")
+            div(id="external-events")
+                h4 Actividades de mantenimiento:
+                |{% for object in object_list %}
+                div(id='my-draggable',class='fc-event ui-draggable ui-draggable-handle ',style='background-color:{{ color }};margin-top:15px;')
+                    p(style="margin:0;padding:10px;") {{object.nombre}}
+                |{% endfor %}
+        div(class="col-xs-12 col-sm-12 col-md-12 col-lg-9 resetCol")
+            div(id='calendar')
+    input(type="hidden",id="mantenimiento",name="mantenimiento",value="{{ mantenimiento }}")
+    input(type="hidden",id="maquina",name="maquina",value="{{ maquina }}")
+    input(type="hidden",id="color",name="color",value="{{ color }}")
+    script(src="{% static 'js/calendario.js' %}")

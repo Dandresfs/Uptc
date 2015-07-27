@@ -1,0 +1,31 @@
+extends base
+block titulo
+   |Inicio
+
+block body_content
+    div(class="container-fluid")
+        div()
+            div(class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetCol")
+                a(href="/ubicacion")
+                    div(class="block",style='background-color:#00A858')
+                        i(class="icono fa fa-map-marker fa-5x")
+                        p(class="text-center") Ubicación en Planta
+
+            div(class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetCol")
+                a(href="/inventario/")
+                    div(class="block",style='background-color:#FA1030')
+                        i(class="icono fa fa-inbox fa-5x")
+                        p(class="text-center") Inventario de Equipos
+
+            div(class="col-xs-12 col-sm-6 col-md-4 col-lg-4 resetCol")
+                a(href="/mantenimiento/")
+                    div(class="block",style='background-color:#DBC600')
+                        i(class="icono fa fa-file-pdf-o fa-5x")
+                        p(class="text-center") Programas de mantenimiento
+    div(class="container-fluid text-right creditos")
+        div(class="col-xs-12 col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 col-lg-4 col-lg-offset-8")
+            h1 Ingenieria Industrial
+            h3 Diseño:
+            p Grupo mantenimiento - Primer semestre 2015
+            h3 Coordinación:
+            p Humberto Patiño

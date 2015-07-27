@@ -1,0 +1,10 @@
+extends base
+
+block titulo
+    |{{title}}
+
+block body_content
+    div(class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 resetCol")
+        form(method="post",class="newCategoryForm",enctype="multipart/form-data",action="") {% csrf_token %}
+            |{{form.as_p}}
+            button(type="submit",class="btn btn-success btn-block") Aceptar
