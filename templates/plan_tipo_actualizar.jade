@@ -1,0 +1,18 @@
+extends base
+block titulo
+    | Plan de Mantenimiento
+block itemsNavbarBreadcrumb
+    li
+        a(href="/") Inicio
+    li
+        a(href="/mantenimiento/") Mantenimiento
+    li
+        a(href="../../") {{nombremantenimiento}}
+    li
+        a(href="../") Plan
+    li(class="active") Actualizar
+block body_content
+   div(class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4")
+      form(action="",method="POST",enctype="multipart/form-data")|{% csrf_token %}
+         |{{form.as_p}}
+         button(type="submit",class="btn btn-success btn-block",style="margin-top:15px;") Aceptar

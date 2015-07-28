@@ -8,3 +8,6 @@ class Ubicacion(TemplateView):
 
 class Mantenimiento(TemplateView):
     template_name = 'mantenimiento.html'
+
+class GrupoView(TemplateView):
+    template_name = 'estudiantes.html'

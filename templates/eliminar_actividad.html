@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
     <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <title>Eliminar</title>
+    <title>Eliminar Actividad</title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
@@ -24,8 +24,10 @@
             <div class="bread">
               <ol class="breadcrumb">
                 <li><a href="/">Inicio</a></li>
-                <li><a href="/inventario/">Inventario</a></li>
-                <li class="active">Eliminar</li>
+                <li><a href="/mantenimiento/">Mantenimiento</a></li>
+                <li><a href="../../../">{{nombremantenimiento}}</a></li>
+                <li><a href="../../actividades/">Actividades {{nombremaquina}}</a></li>
+                <li class="active">Eliminar actividad {{object}}</li>
               </ol>
             </div>
           </ul>

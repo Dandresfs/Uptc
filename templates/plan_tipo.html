@@ -1,0 +1,48 @@
+{% load staticfiles %}<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <title>Plan {{tipomantenimiento}}</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  </head>
+  <body>{% if user.is_authenticated %}
+    <nav class="navbar navbar-custom">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#idNavbar" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toogle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div id="idNavbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <div class="bread">
+              <ol class="breadcrumb">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/mantenimiento/">Mantenimiento</a></li>
+                <li><a href="../">{{tipomantenimiento}}</a></li>
+                <li class="active">Plan</li>
+              </ol>
+            </div>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="actualizar/">Actualizar el plan de Mantenimiento</a></li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle capitalize">{{user.username}}<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/cerrar">Cerrar sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>{% endif %}
+    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-sm-offset-2 col-lg-10 col-lg-offset-1">
+      <object type="application/pdf" data="/media/{{pdf}}" style="width: 100%; height: 550px;"></object>
+    </div>
+  </body>
+</html>

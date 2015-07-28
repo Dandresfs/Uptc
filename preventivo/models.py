@@ -3,6 +3,7 @@ from inventario_equipos.models import InventarioEquipos
 
 class TipoMantenimiento(models.Model):
     nombre = models.CharField('Tipo mantenimiento',max_length=100)
+    plan = models.FileField('Plan', upload_to='Plan/',blank=True)
 
     def __str__(self):
         return self.nombre

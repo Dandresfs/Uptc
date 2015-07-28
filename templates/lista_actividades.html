@@ -24,8 +24,9 @@
             <div class="bread">
               <ol class="breadcrumb">
                 <li><a href="/inicio/">Inicio</a></li>
+                <li><a href="/mantenimiento/">Mantenimiento</a></li>
                 <li><a href="../../">{{tipomantenimiento}}</a></li>
-                <li class="active">{{nombremaquina}}</li>
+                <li class="active">Actividades {{nombremaquina}}</li>
               </ol>
             </div>
           </ul>
@@ -43,7 +44,7 @@
       <div class="text-center">
         <h3>Seleccione la actividad que quiere eliminar</h3>{% for object in object_list %}
         <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 resetCol"><a href="../eliminar/{{object.id}}">
-            <div class="actividad">{{object.nombre}}</div></a></div>{% endfor %}
+            <div style="background-color:{{colormaquina}};" class="actividad">{{object.nombre}}</div></a></div>{% endfor %}
       </div>
     </div>
   </body>

@@ -2,6 +2,20 @@ extends base
 block titulo
     |Nueva Actividad
 
+block itemsNavbarBreadcrumb
+    li
+        a(href="/inicio/") Inicio
+    li
+        a(href="/mantenimiento/") Mantenimiento
+    |{% if tipo == 'Editar' %}
+    li
+        a(href="../../../") {{nombremantenimiento}}
+    |{% elif tipo == 'Nueva' %}
+    li
+        a(href="../../") {{nombremantenimiento}}
+    |{% endif %}
+    li(class="active") {{tipo}} Actividad {{nombremaquina}}
+
 block body_content
     div(class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 resetCol")
         form(method="post",class="newCategoryForm",enctype="multipart/form-data",action="") {% csrf_token %}

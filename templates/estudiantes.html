@@ -1,0 +1,124 @@
+{% load staticfiles %}<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <title>Grupo Mantenimiento</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  </head>
+  <body>{% if user.is_authenticated %}
+    <nav class="navbar navbar-custom">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#idNavbar" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toogle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div id="idNavbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <div class="bread">
+              <ol class="breadcrumb">
+                <li><a href="/inicio/">Inicio</a></li>
+                <li class="active">Grupo</li>
+              </ol>
+            </div>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle capitalize">{{user.username}}<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/cerrar">Cerrar sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>{% endif %}
+    <div class="container-fluid">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 resetCol">
+        <div class="blockgrupo"><a href="https://www.facebook.com/ibeth.carrenoavella"><img src="{% static 'imagenes/estudiante1.jpg' %}" class="foto"></a>
+          <p>Ibeth Carreño Avella</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 resetCol">
+        <div class="blockgrupo"><a href="https://www.facebook.com/monik.gutierrezpena"><img src="{% static 'imagenes/estudiante2.jpg' %}" class="foto"></a>
+          <p>Monica Gutierrez Peña</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 resetCol">
+        <div class="blockgrupo"><a href="https://www.facebook.com/paula.quintana.93"><img src="{% static 'imagenes/estudiante3.jpg' %}" class="foto"></a>
+          <p>Paula Quintana</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 resetCol">
+        <div class="blockgrupo"><a href="https://www.facebook.com/rikrdopards"><img src="{% static 'imagenes/estudiante4.jpg' %}" class="foto"></a>
+          <p>Ricardo Paredes</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 resetCol">
+        <div class="blockgrupo"><a href="https://www.facebook.com/karen.j.perez.5"><img src="{% static 'imagenes/estudiante5.jpg' %}" class="foto"></a>
+          <p>Karen Juliet Perez</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 resetCol">
+        <div class="blockgrupo"><a href="https://www.facebook.com/diego.cely.102"><img src="{% static 'imagenes/estudiante6.jpg' %}" class="foto"></a>
+          <p>Diego Cely</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 resetCol">
+        <div class="blockgrupo"><a href="https://www.facebook.com/nilson.patino"><img src="{% static 'imagenes/estudiante7.jpg' %}" class="foto"></a>
+          <p>Nilson Andrey Nova</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 resetCol">
+        <div class="blockgrupo"><a href="https://www.facebook.com/michael.osoriopena"><img src="{% static 'imagenes/estudiante8.jpg' %}" class="foto"></a>
+          <p>Michael Osorio Peña</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 resetCol">
+        <div class="blockgrupo"><a href="https://www.facebook.com/carlos.riveranumpaque"><img src="{% static 'imagenes/estudiante9.jpg' %}" class="foto"></a>
+          <p>Carlos Rivera</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 resetCol">
+        <div class="blockgrupo"><a href="https://www.facebook.com/yully.vargas.5"><img src="{% static 'imagenes/estudiante10.jpg' %}" class="foto"></a>
+          <p>Yully Vargas</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 resetCol">
+        <div class="blockgrupo"><a href="https://www.facebook.com/yeseniaastrid"><img src="{% static 'imagenes/estudiante11.jpg' %}" class="foto"></a>
+          <p>Yess Vega</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 resetCol">
+        <div class="blockgrupo"><a href="https://www.facebook.com/gilma.solano.1"><img src="{% static 'imagenes/estudiante12.jpg' %}" class="foto"></a>
+          <p>Gilma Solano</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 resetCol">
+        <div class="blockgrupo"><a href="https://www.facebook.com/wilmar.espinosa"><img src="{% static 'imagenes/estudiante13.jpg' %}" class="foto"></a>
+          <p>Wilmar Espinosa</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 resetCol">
+        <div class="blockgrupo"><a href="https://www.facebook.com/profile.php?id=1280710668"><img src="{% static 'imagenes/estudiante14.jpg' %}" class="foto"></a>
+          <p>Diego Andres</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 resetCol">
+        <div class="blockgrupo"><a href="https://www.facebook.com/jesusarmando.bellovega"><img src="{% static 'imagenes/estudiante15.jpg' %}" class="foto"></a>
+          <p>Jesus Armando Bello Vega</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 resetCol">
+        <div class="blockgrupo"><a href="https://www.facebook.com/sebastian.rojasespinel"><img src="{% static 'imagenes/estudiante16.jpg' %}" class="foto"></a>
+          <p>Sebastian Rojas Espinel</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

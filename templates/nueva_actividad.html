@@ -23,6 +23,11 @@
           <ul class="nav navbar-nav navbar-left">
             <div class="bread">
               <ol class="breadcrumb">
+                <li><a href="/inicio/">Inicio</a></li>
+                <li><a href="/mantenimiento/">Mantenimiento</a></li>{% if tipo == 'Editar' %}
+                <li><a href="../../../">{{nombremantenimiento}}</a></li>{% elif tipo == 'Nueva' %}
+                <li><a href="../../">{{nombremantenimiento}}</a></li>{% endif %}
+                <li class="active">{{tipo}} Actividad {{nombremaquina}}</li>
               </ol>
             </div>
           </ul>

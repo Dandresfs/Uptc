@@ -22,7 +22,7 @@ $(document).ready(function() {
         header: {
             left: 'prev,next today',
             center: 'title',
-            right: 'month,agendaWeek,agendaDay'
+            right: 'month,basicWeek,basicDay'
         },
         eventColor:color,
         selectable: true,

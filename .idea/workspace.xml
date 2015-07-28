@@ -2,14 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49d437ff-e0c6-4dea-a8b5-6ad6b346880d" name="Default" comment="Login completo">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/plan.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/plan_actualizar.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/calendario_mantenimiento.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/calendario_mantenimiento.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/estudiantes.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/plan_tipo.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/plan_tipo_actualizar.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inventario_equipos/forms.py" afterPath="$PROJECT_DIR$/inventario_equipos/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/base.css" afterPath="$PROJECT_DIR$/static/css/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/base.styl" afterPath="$PROJECT_DIR$/static/css/base.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/calendario.html" afterPath="$PROJECT_DIR$/templates/calendario.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/calendario.jade" afterPath="$PROJECT_DIR$/templates/calendario.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/calendario.js" afterPath="$PROJECT_DIR$/static/js/calendario.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/calendario_general.js" afterPath="$PROJECT_DIR$/static/js/calendario_general.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/calendario_maquina.html" afterPath="$PROJECT_DIR$/templates/calendario_maquina.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/calendario_maquina.jade" afterPath="$PROJECT_DIR$/templates/calendario_maquina.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/calendario_maquina.js" afterPath="$PROJECT_DIR$/static/js/calendario_maquina.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/eliminar.html" afterPath="$PROJECT_DIR$/templates/eliminar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/eliminar.jade" afterPath="$PROJECT_DIR$/templates/eliminar.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/eliminar_actividad.html" afterPath="$PROJECT_DIR$/templates/eliminar_actividad.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/eliminar_actividad.jade" afterPath="$PROJECT_DIR$/templates/eliminar_actividad.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preventivo/forms.py" afterPath="$PROJECT_DIR$/preventivo/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/inicio.html" afterPath="$PROJECT_DIR$/templates/inicio.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/inicio.jade" afterPath="$PROJECT_DIR$/templates/inicio.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/lista_actividades.html" afterPath="$PROJECT_DIR$/templates/lista_actividades.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/lista_actividades.jade" afterPath="$PROJECT_DIR$/templates/lista_actividades.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/lista_actividades_editar.html" afterPath="$PROJECT_DIR$/templates/lista_actividades_editar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/lista_actividades_editar.jade" afterPath="$PROJECT_DIR$/templates/lista_actividades_editar.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/lista_maquinas.html" afterPath="$PROJECT_DIR$/templates/lista_maquinas.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/lista_maquinas.jade" afterPath="$PROJECT_DIR$/templates/lista_maquinas.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inventario_equipos/models.py" afterPath="$PROJECT_DIR$/inventario_equipos/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preventivo/models.py" afterPath="$PROJECT_DIR$/preventivo/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/nueva_actividad.html" afterPath="$PROJECT_DIR$/templates/nueva_actividad.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/nueva_actividad.jade" afterPath="$PROJECT_DIR$/templates/nueva_actividad.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/nuevo_inventario_equipos.html" afterPath="$PROJECT_DIR$/templates/nuevo_inventario_equipos.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/nuevo_inventario_equipos.jade" afterPath="$PROJECT_DIR$/templates/nuevo_inventario_equipos.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/plan_actualizar.html" afterPath="$PROJECT_DIR$/templates/plan_actualizar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/plan_actualizar.jade" afterPath="$PROJECT_DIR$/templates/plan_actualizar.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/urls.py" afterPath="$PROJECT_DIR$/conf/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preventivo/urls.py" afterPath="$PROJECT_DIR$/preventivo/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/views.py" afterPath="$PROJECT_DIR$/conf/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inventario_equipos/views.py" afterPath="$PROJECT_DIR$/inventario_equipos/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preventivo/views.py" afterPath="$PROJECT_DIR$/preventivo/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -36,64 +67,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/preventivo/views.py">
+      <file leaf-file-name="estudiantes.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/estudiantes.jade">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+              <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inicio.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/inicio.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.styl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/css/base.styl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.43939394">
+              <caret line="179" column="20" selection-start-line="179" selection-start-column="20" selection-end-line="179" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inventario_equipos/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding>
-                <element signature="e#0#46#0" expanded="true" />
-                <element signature="e#2058#2612#0" expanded="false" />
-                <element signature="e#2655#3222#0" expanded="false" />
-                <element signature="e#3260#3551#0" expanded="false" />
-                <element signature="e#3593#3985#0" expanded="false" />
-                <element signature="e#4031#4126#0" expanded="false" />
-                <element signature="e#4333#5126#0" expanded="false" />
-                <element signature="e#5366#6029#0" expanded="false" />
-                <element signature="e#6064#7020#0" expanded="false" />
-                <element signature="e#7059#7320#0" expanded="false" />
-                <element signature="e#7356#7580#0" expanded="false" />
+                <element signature="e#0#69#0" expanded="true" />
+                <element signature="e#602#1277#0" expanded="false" />
+                <element signature="e#1323#1620#0" expanded="false" />
+                <element signature="e#1670#1914#0" expanded="false" />
+                <element signature="e#1963#2269#0" expanded="false" />
+                <element signature="e#2324#2673#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inventario_equipos.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/inventario_equipos.jade">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="49" />
+              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plan_actualizar.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/plan_actualizar.jade">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inventario_equipos/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plan.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/plan.jade">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/inventario_equipos/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5782313">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-              <folding />
+              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+              <folding>
+                <element signature="e#617#658#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,11 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/category.jade" />
-        <option value="$PROJECT_DIR$/category/templatetags/dict.py" />
-        <option value="$PROJECT_DIR$/project/urls.py" />
-        <option value="$PROJECT_DIR$/templates/nuevo.jade" />
-        <option value="$PROJECT_DIR$/project/forms.py" />
         <option value="$PROJECT_DIR$/category/models.py" />
         <option value="$PROJECT_DIR$/project/models.py" />
         <option value="$PROJECT_DIR$/category/urls.py" />
@@ -133,40 +176,45 @@
         <option value="$PROJECT_DIR$/static/js/map.js" />
         <option value="$PROJECT_DIR$/templates/ubicacion.jade" />
         <option value="$PROJECT_DIR$/templates/login.jade" />
-        <option value="$PROJECT_DIR$/templates/nuevo_inventario_equipos.jade" />
         <option value="$PROJECT_DIR$/static/js/lang-all.js" />
-        <option value="$PROJECT_DIR$/conf/views.py" />
-        <option value="$PROJECT_DIR$/templates/inicio.jade" />
-        <option value="$PROJECT_DIR$/templates/nueva_actividad.jade" />
         <option value="$PROJECT_DIR$/templates/base.jade" />
-        <option value="$PROJECT_DIR$/templates/eliminar.jade" />
         <option value="$PROJECT_DIR$/preventivo/admin.py" />
         <option value="$PROJECT_DIR$/templates/inventario_equipos.jade" />
-        <option value="$PROJECT_DIR$/inventario_equipos/views.py" />
         <option value="$PROJECT_DIR$/preventivo/serializers.py" />
-        <option value="$PROJECT_DIR$/static/js/calendario_maquina.js" />
-        <option value="$PROJECT_DIR$/templates/calendario_maquina.jade" />
-        <option value="$PROJECT_DIR$/static/js/calendario_general.js" />
         <option value="$PROJECT_DIR$/templates/calendario_total.jade" />
         <option value="$PROJECT_DIR$/templates/mantenimiento.jade" />
-        <option value="$PROJECT_DIR$/templates/eliminar_actividad.jade" />
-        <option value="$PROJECT_DIR$/static/js/calendario.js" />
-        <option value="$PROJECT_DIR$/conf/urls.py" />
-        <option value="$PROJECT_DIR$/inventario_equipos/urls.py" />
-        <option value="$PROJECT_DIR$/static/css/base.styl" />
         <option value="$PROJECT_DIR$/conf/settings.py" />
-        <option value="$PROJECT_DIR$/preventivo/models.py" />
-        <option value="$PROJECT_DIR$/preventivo/forms.py" />
-        <option value="$PROJECT_DIR$/templates/lista_actividades.jade" />
-        <option value="$PROJECT_DIR$/templates/lista_actividades_editar.jade" />
-        <option value="$PROJECT_DIR$/templates/calendario.jade" />
-        <option value="$PROJECT_DIR$/templates/lista_maquinas.jade" />
-        <option value="$PROJECT_DIR$/inventario_equipos/forms.py" />
-        <option value="$PROJECT_DIR$/preventivo/urls.py" />
-        <option value="$PROJECT_DIR$/preventivo/views.py" />
-        <option value="$PROJECT_DIR$/templates/plan_actualizar.jade" />
         <option value="$PROJECT_DIR$/templates/plan.jade" />
         <option value="$PROJECT_DIR$/inventario_equipos/models.py" />
+        <option value="$PROJECT_DIR$/static/js/calendario.js" />
+        <option value="$PROJECT_DIR$/static/js/calendario_general.js" />
+        <option value="$PROJECT_DIR$/static/js/calendario_mantenimiento.js" />
+        <option value="$PROJECT_DIR$/static/js/calendario_maquina.js" />
+        <option value="$PROJECT_DIR$/preventivo/models.py" />
+        <option value="$PROJECT_DIR$/inventario_equipos/forms.py" />
+        <option value="$PROJECT_DIR$/preventivo/urls.py" />
+        <option value="$PROJECT_DIR$/preventivo/forms.py" />
+        <option value="$PROJECT_DIR$/templates/nuevo_inventario_equipos.jade" />
+        <option value="$PROJECT_DIR$/templates/eliminar.jade" />
+        <option value="$PROJECT_DIR$/templates/plan_tipo.jade" />
+        <option value="$PROJECT_DIR$/templates/plan_actualizar.jade" />
+        <option value="$PROJECT_DIR$/templates/plan_tipo_actualizar.jade" />
+        <option value="$PROJECT_DIR$/templates/calendario.jade" />
+        <option value="$PROJECT_DIR$/templates/eliminar_actividad.jade" />
+        <option value="$PROJECT_DIR$/templates/lista_actividades.jade" />
+        <option value="$PROJECT_DIR$/templates/lista_actividades_editar.jade" />
+        <option value="$PROJECT_DIR$/preventivo/views.py" />
+        <option value="$PROJECT_DIR$/templates/nueva_actividad.jade" />
+        <option value="$PROJECT_DIR$/templates/calendario_maquina.jade" />
+        <option value="$PROJECT_DIR$/templates/calendario_mantenimiento.jade" />
+        <option value="$PROJECT_DIR$/templates/lista_maquinas.jade" />
+        <option value="$PROJECT_DIR$/inventario_equipos/views.py" />
+        <option value="$PROJECT_DIR$/conf/views.py" />
+        <option value="$PROJECT_DIR$/conf/urls.py" />
+        <option value="$PROJECT_DIR$/inventario_equipos/urls.py" />
+        <option value="$PROJECT_DIR$/templates/inicio.jade" />
+        <option value="$PROJECT_DIR$/templates/estudiantes.jade" />
+        <option value="$PROJECT_DIR$/static/css/base.styl" />
       </list>
     </option>
   </component>
@@ -178,10 +226,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -234,7 +280,103 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Andes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uptc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Andes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uptc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Andes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uptc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base.styl" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Andes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uptc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="preventivo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Andes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uptc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="inventario_equipos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Andes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uptc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -533,19 +675,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="728" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22919819" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23200613" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44117647" sideWeight="0.5045386" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23366013" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23993288" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22875817" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25326797" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3496732" sideWeight="0.49546143" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -582,53 +724,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="130" />
+      <option name="time" value="149" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python34/Lib/site-packages/django/core/management/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2288733">
-          <caret line="523" column="0" selection-start-line="523" selection-start-column="0" selection-end-line="523" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/background-selector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17621145">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="57" selection-start-line="0" selection-start-column="57" selection-end-line="0" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/inventario_equipos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="15.423077">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/nuevo_inventario_equipos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.57349396">
@@ -678,31 +778,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3469388">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/inicio.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77097505">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/calendario.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.3686747">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5782313">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -727,13 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/calendario_maquina.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/calendario_total.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -741,48 +813,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/eliminar.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/calendario_general.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33252427">
-          <caret line="49" column="35" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/calendario_maquina.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="17" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/media/Actividades/Imagenes/11304502_10206924018878480_941798241_n.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/calendario.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44510385">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="39" />
-          <folding>
-            <element signature="e#617#658#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/settings.py">
@@ -795,166 +828,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preventivo/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61678004">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/lista_actividades_editar.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26984128">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/lista_actividades.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26757368">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/calendario.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53741497">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inventario_equipos/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11486486">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4240363">
           <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/editar.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/eliminar_actividad.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38548753">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="129" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/lista_maquinas.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preventivo/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19274376">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inventario_equipos/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inventario_equipos/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#69#0" expanded="true" />
-            <element signature="e#1071#1164#0" expanded="false" />
-            <element signature="e#1214#1458#0" expanded="false" />
-            <element signature="e#1507#1813#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preventivo/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="106" selection-start-line="1" selection-start-column="106" selection-end-line="1" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/nueva_actividad.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mantenimiento.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/nuevo_inventario_equipos.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3469388">
-          <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/base.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33252427">
-          <caret line="104" column="10" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preventivo/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-            <element signature="e#2058#2612#0" expanded="false" />
-            <element signature="e#2655#3222#0" expanded="false" />
-            <element signature="e#3260#3551#0" expanded="false" />
-            <element signature="e#3593#3985#0" expanded="false" />
-            <element signature="e#4031#4126#0" expanded="false" />
-            <element signature="e#4333#5126#0" expanded="false" />
-            <element signature="e#5366#6029#0" expanded="false" />
-            <element signature="e#6064#7020#0" expanded="false" />
-            <element signature="e#7059#7320#0" expanded="false" />
-            <element signature="e#7356#7580#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -966,26 +844,318 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/plan_actualizar.jade">
+    <entry file="file://$PROJECT_DIR$/templates/editar.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64324325">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/calendario.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/calendario_general.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/calendario_mantenimiento.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/calendario_maquina.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.038288288">
+          <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preventivo/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventario_equipos/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.077097505">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mantenimiento.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15419501">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="7" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/nuevo_inventario_equipos.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19274376">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="11" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/plan.jade">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27567568">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/plan_tipo.jade">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/plan_tipo_actualizar.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46258503">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/plan_actualizar.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26984128">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/calendario.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26984128">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="20" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inventario_equipos/models.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3469388">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preventivo/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.827027">
+          <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lista_actividades.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="79" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lista_actividades_editar.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="84" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/eliminar.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/eliminar_actividad.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="12" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/nueva_actividad.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26757368">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preventivo/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53968257">
+          <caret line="133" column="38" selection-start-line="133" selection-start-column="38" selection-end-line="133" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+            <element signature="e#510#1537#0" expanded="false" />
+            <element signature="e#1573#1949#0" expanded="false" />
+            <element signature="e#1989#2452#0" expanded="false" />
+            <element signature="e#2496#3011#0" expanded="false" />
+            <element signature="e#3048#3700#0" expanded="false" />
+            <element signature="e#3743#4408#0" expanded="false" />
+            <element signature="e#4446#4737#0" expanded="false" />
+            <element signature="e#4779#5521#0" expanded="false" />
+            <element signature="e#5567#6239#0" expanded="false" />
+            <element signature="e#6284#6760#0" expanded="false" />
+            <element signature="e#6798#7591#0" expanded="false" />
+            <element signature="e#7831#8494#0" expanded="false" />
+            <element signature="e#8529#9485#0" expanded="false" />
+            <element signature="e#9524#9785#0" expanded="false" />
+            <element signature="e#9821#10045#0" expanded="false" />
+            <element signature="e#10090#10369#0" expanded="false" />
+            <element signature="e#10405#10663#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/calendario_mantenimiento.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61678004">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/calendario_maquina.jade">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5782313">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preventivo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61451244">
+          <caret line="24" column="104" selection-start-line="24" selection-start-column="104" selection-end-line="24" selection-end-column="104" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lista_maquinas.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="e#617#658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventario_equipos/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventario_equipos/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+            <element signature="e#602#1277#0" expanded="false" />
+            <element signature="e#1323#1620#0" expanded="false" />
+            <element signature="e#1670#1914#0" expanded="false" />
+            <element signature="e#1963#2269#0" expanded="false" />
+            <element signature="e#2324#2673#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53968257">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/inicio.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="2185" selection-start-line="0" selection-start-column="2182" selection-end-line="0" selection-end-column="2185" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/estudiantes.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/base.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43939394">
+          <caret line="179" column="20" selection-start-line="179" selection-start-column="20" selection-end-line="179" selection-end-column="20" />
           <folding />
         </state>
       </provider>

@@ -5,8 +5,11 @@ block itemsNavbarBreadcrumb
     li
         a(href="/inicio/") Inicio
     li
-        a(href="../") Mantenimiento
-    li(class="active") {{nombremaquina}}
+        a(href="/mantenimiento/") Mantenimiento
+    li
+        a(href="../../") {{tipomantenimiento}}
+
+    li(class="active") Actividades {{nombremaquina}}
 block body_content
     div(class="container-fluid")
         div(class="text-center")
@@ -14,5 +17,5 @@ block body_content
             | {% for object in object_list %}
             div(class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 resetCol")
                 a(href="../editar/{{object.id}}")
-                    div(class="actividad") {{object.nombre}}
+                    div(class="actividad",style="background-color:{{colormaquina}};") {{object.nombre}}
             | {% endfor %}

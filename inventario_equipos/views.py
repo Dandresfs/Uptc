@@ -5,6 +5,7 @@ from django.views.generic import TemplateView
 from .forms import NuevoInventarioEquipos
 from .models import InventarioEquipos
 from preventivo.models import EventCalendar
+from preventivo.models import TipoMantenimiento
 
 class InventarioView(ListView):
     model = InventarioEquipos
@@ -27,10 +28,18 @@ class InventarioUpdateView(UpdateView):
             event.save()
         return super(InventarioUpdateView,self).form_valid(form)
 
+    def get_context_data(self, **kwargs):
+        kwargs['nombre'] = InventarioEquipos.objects.get(id=self.kwargs['pk']).nombre
+        return super(InventarioUpdateView,self).get_context_data(**kwargs)
+
 class InventarioDeleteView(DeleteView):
     template_name = 'eliminar.html'
     model = InventarioEquipos
     success_url = '/inventario'
+
+    def get_context_data(self, **kwargs):
+        kwargs['nombre'] = InventarioEquipos.objects.get(id=self.kwargs['pk']).nombre
+        return super(InventarioDeleteView,self).get_context_data(**kwargs)
 
 class NuevoInventarioEquiposForm(FormView):
     template_name = 'nuevo_inventario_equipos.html'
@@ -49,5 +58,14 @@ class CalendarioMaquinaView(TemplateView):
         kwargs['nombre'] = InventarioEquipos.objects.get(id=self.kwargs['idmachine']).nombre
         return super(CalendarioMaquinaView,self).get_context_data(**kwargs)
 
+class CalendarioMantenimientoView(TemplateView):
+    template_name = 'calendario_mantenimiento.html'
+
+    def get_context_data(self, **kwargs):
+        kwargs['mantenimiento'] = self.kwargs['idmantenimiento']
+        kwargs['nombremantenimiento'] = TipoMantenimiento.objects.get(id=self.kwargs['idmantenimiento']).nombre
+        return super(CalendarioMantenimientoView,self).get_context_data(**kwargs)
+
 class CalendarioFullView(TemplateView):
     template_name = 'calendario_total.html'
+

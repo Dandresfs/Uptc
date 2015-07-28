@@ -18,6 +18,7 @@ from .views import Inicio,Ubicacion, Mantenimiento
 from django.contrib import admin
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
+from .views import GrupoView
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
@@ -28,5 +29,6 @@ urlpatterns = [
     url(r'^mantenimiento/$',login_required(Mantenimiento.as_view()),name="mantenimiento"),
     url(r'^inventario/',include('inventario_equipos.urls')),
     url(r'^tipo/',include('preventivo.urls')),
+    url(r'^grupo/$',login_required(GrupoView.as_view())),
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve',{'document_root': settings.MEDIA_ROOT,}),
 ]
