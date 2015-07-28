@@ -1,4 +1,5 @@
 from django.views.generic.list import ListView
+from django.views.generic import TemplateView
 from django.views.generic.edit import FormView
 from .forms import NuevaActividad, PlanMantenimiento
 from inventario_equipos.forms import NuevoPlan
@@ -158,6 +159,9 @@ class CalendarioView(ListView):
         kwargs['maquina'] = self.kwargs['idmachine']
         kwargs['nombremaquina'] = InventarioEquipos.objects.get(id=self.kwargs['idmachine']).nombre
         return super(CalendarioView,self).get_context_data(**kwargs)
+
+class FormatosView(TemplateView):
+    template_name = "formatos.html"
 
 from rest_framework.views import APIView
 from rest_framework import status

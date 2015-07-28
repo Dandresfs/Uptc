@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <script src="{% static 'js/jquery.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/lightbox.css' %}">
   </head>
   <body>{% if user.is_authenticated %}
     <nav class="navbar navbar-custom">
@@ -55,15 +56,16 @@
     <div class="container-fluid creditos">
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-left">
         <h3>Programacion:</h3><a href="http://dandresfs.github.io/portafolio/">
-          <p>Ingeniero: Diego Andres Fonseca Soto</p></a>
+          <p>Ingeniero Diego Andres Fonseca Soto</p></a>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 text-right">
         <h1>Ingenieria Industrial</h1>
         <h3>Diseño:</h3><a href="/grupo/">
           <p>Grupo mantenimiento - Primer semestre 2015</p></a>
-        <h3>Coordinación:</h3>
-        <p>Ingeniero: Humberto Patiño</p>
+        <h3>Coordinación:</h3><a href="{% static 'imagenes/docente.jpg' %}" data-lightbox="image-1" data-title="Ingeniero Humberto Patiño">
+          <p>Ingeniero Humberto Patiño</p></a>
       </div>
     </div>
+    <script src="{% static 'js/lightbox.min.js' %}"></script>
   </body>
 </html>

@@ -10,6 +10,10 @@ block itemsNavbarBreadcrumb
     li(class="active") {{nombremantenimiento}}
 
 block itemsNavbarRight
+    |{% if nombremantenimiento = 'Correctivo' %}
+    li
+        a(href="formatos/") Formatos
+    |{% endif %}
     li
         a(href="calendario/") Calendario mantenimiento {{nombremantenimiento}}
     li

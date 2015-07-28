@@ -1,0 +1,44 @@
+extends base
+block titulo
+    |Formatos
+
+block itemsNavbarBreadcrumb
+    li
+        a(href="/inicio/") Inicio
+    li
+        a(href="/mantenimiento/") Mantenimiento
+    li
+        a(href="../") Correctivo
+    li(class="active") Formatos
+
+block body_content
+    div(class="container-fluid")
+       div(class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4",style="margin:20px 0;")
+          a(href="/media/formatos/FORMATO-AVISO-DE-FALLA.pdf")
+            img(class="iconPdf",src="/static/imagenes/pdf.png")
+          p(style="display:inline;") Aviso de falla
+
+       div(class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4",style="margin:20px 0;")
+          a(href="/media/formatos/ORDEN-DE-TRABAJO.pdf")
+            img(class="iconPdf",src="/static/imagenes/pdf.png")
+          p(style="display:inline;") Orden de trabajo
+
+       div(class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4",style="margin:20px 0;")
+          a(href="/media/formatos/REGISTRO-DE-MANTENIMIENTO.pdf")
+            img(class="iconPdf",src="/static/imagenes/pdf.png")
+          p(style="display:inline;") Registro de mantenimiento
+
+       div(class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4",style="margin:20px 0;")
+          a(href="/media/formatos/SOLICITUD-DE-MATERIALES.pdf")
+            img(class="iconPdf",src="/static/imagenes/pdf.png")
+          p(style="display:inline;") Solicitud de materiales
+
+       div(class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4",style="margin:20px 0;")
+          a(href="/media/formatos/INFORME-DE-TRABAJO.pdf")
+            img(class="iconPdf",src="/static/imagenes/pdf.png")
+          p(style="display:inline;") Informe de trabajo
+
+       div(class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4",style="margin:20px 0;")
+          a(href="/media/formatos/DOCUMENTO-DE-ACEPTACION-DE-PROVEEDORES.docx")
+            img(class="iconPdf",src="/static/imagenes/word.png")
+          p(style="display:inline;") Documento de aceptacion de proveedores

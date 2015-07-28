@@ -2,6 +2,9 @@ extends base
 block titulo
    |Inicio
 
+block extra_style
+    link(rel="stylesheet",href="{% static 'css/lightbox.css' %}")
+
 block body_content
     div(class="container-fluid")
         div()
@@ -26,7 +29,8 @@ block body_content
         div(class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-left")
             h3 Programacion:
             a(href="http://dandresfs.github.io/portafolio/")
-                p Ingeniero: Diego Andres Fonseca Soto
+                p Ingeniero Diego Andres Fonseca Soto
+
 
         div(class="col-xs-12 col-sm-6 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 text-right")
             h1 Ingenieria Industrial
@@ -34,4 +38,7 @@ block body_content
             a(href="/grupo/")
                 p Grupo mantenimiento - Primer semestre 2015
             h3 Coordinación:
-            p Ingeniero: Humberto Patiño
+            a(href="{% static 'imagenes/docente.jpg' %}",data-lightbox="image-1",data-title="Ingeniero Humberto Patiño")
+                p Ingeniero Humberto Patiño
+
+    script(src="{% static 'js/lightbox.min.js' %}")

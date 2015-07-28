@@ -29,7 +29,8 @@
               </ol>
             </div>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right">{% if nombremantenimiento = 'Correctivo' %}
+            <li><a href="formatos/">Formatos</a></li>{% endif %}
             <li><a href="calendario/">Calendario mantenimiento {{nombremantenimiento}}</a></li>
             <li><a href="plan/">Plan de mantenimiento {{nombremantenimiento}}</a></li>
             <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle capitalize">{{user.username}}<span class="caret"></span></a>
